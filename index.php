@@ -1,13 +1,13 @@
 <?php
-
 include_once('controllers/UsuarioControl.php');
+ 
 
 //OPCIONALES
 include_once('config/Conexion.php');
 include_once('entidad/Usuario.php');
+ 
 
-
-$controller = new Control();
+$controller = new UsuarioControl();
 
 if(!isset($_REQUEST['c'])){//si no existe la ruta ,cargamos por defecto index
    $controller->index();
